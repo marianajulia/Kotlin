@@ -5,13 +5,19 @@ fun main(){
   var ano: Int
   var meses: Int
   var dias: Int
+  var idadeFinal: Int
 
   println("Digite sua idade em anos: ")
   ano = readLine().toString().toInt()
 
   println("Digite sua idade em meses: ")
-  ano = readLine().toString().toInt()
+  meses = readLine().toString().toInt()
 
-  println("Digite sua idade em anos: ")
-  ano = readLine().toString().toInt()
+  println("Digite sua idade em dias: ")
+  dias  = readLine().toString().toInt()
+
+  idadeFinal = (ano * 365) + (meses * 30) + dias 
+
+
+  println("Sua idade em dias é ${idadeFinal} ")
 }
